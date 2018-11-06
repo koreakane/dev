@@ -24,16 +24,17 @@ header h1{
   overflow: visible;
   position: absolute;
   left: 50%;
-  width: 102px;
-  height: 45px;
-  margin: 0 0 0 -51px;
+  width: 60px;
+  height: 27px;
+  margin: 0 0 0 -30px;
   background-image: url("../img/FaToGO.png");
-  background-size: 102px 53px;
+  background-size: 60px 31px;
+  background-repeat: no-repeat;
 }
 
 header{
   position: relative;
-  height: 45px;
+  height:27px;
   border: solid 0.5px #c9c9c9;
   background-color: #fbffff;
 
