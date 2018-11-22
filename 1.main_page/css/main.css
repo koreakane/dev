@@ -21,23 +21,19 @@ header h1 a {
 header h1 {
   overflow: visible;
   position: absolute;
+  top: 29%;
   left: 50%;
-  width: 102px;
-  height: 45px;
-  margin: 0 0 0 -51px;
+  width: 84px;
+  height: 30px;
+  margin: 0 0 0 -42px;
   background-image: url("../img/FaToGO.png");
-  background-size: 102px 53px;
+  background-size: 84px 30px;
 }
 
 header {
   position: relative;
-  height: 45px;
-  border: solid 0.5px #c9c9c9;
+  height: 100px;
   background-color: #fbffff;
-}
-
-.vertical, .score, .location, .name, .price_tag, .price {
-  position: absolute;
 }
 
 .vertical {
@@ -46,89 +42,146 @@ header {
   bottom: 0;
   left: 0;
   z-index: 10;
-  padding: 0 16px;
+  margin: 0 6.1%;
 }
 
-.score {
-  top: 154px;
-  left: 5%;
-  width: 65%;
-}
-
-.location {
-  top: 156.5px;
-  left: 67%;
-  width: 65%;
-}
-
-.location p {
-  font-size: 11px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.09;
-  letter-spacing: normal;
-  text-align: left;
-}
-
-.name {
-  top: 183.5px;
-  left: 4.5%;
-}
-
-.name h3 {
-  font-size: 23px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.17;
-  letter-spacing: normal;
-  text-align: left;
-}
-
-.price_tag {
-  width: 74.1px;
-  height: 22.5px;
-  top: 222.5px;
-  left: 4.5%;
-  background-color: #c5ffff;
-}
-
-.price_tag p {
-  text-align: center;
-}
-
-.price {
-  top: 222.5px;
-  left: 28%;
-}
-
-p, h3 {
-  font-family: NanumSquareRound;
-  color: rgba(0, 0, 0, 0.85);
+a {
+  text-decoration: none;
 }
 
 ul {
   list-style: none;
-  width: 360px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 li {
-  margin-bottom: 9px;
+  margin-bottom: 40px;
   list-style: none;
   overflow: hidden;
   position: relative;
-  height: 252px;
+  height: 417px;
   object-fit: contain;
   -webkit-backdrop-filter: blur(48px);
   backdrop-filter: blur(48px);
-  box-shadow: 0 1px 1px 0 #e5e4e8;
   background-color: #ffffff;
+  border-bottom: solid 1px #efefef;
+}
+
+ul li a p img {
+  border-radius: 8px;
+}
+
+p, h2, h3, h4 {
+  text-decoration: none;
+  font-family: 'Noto Sans KR';
+  color: #4a4e52;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.hotel_description {
+  height: 203px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.hotel_name, .hotel_place, .hotel_evaluation, .hotel_amenity, .hotel_price {
+  position: absolute;
+}
+
+.hotel_name {
+  height: 36px;
+}
+
+.hotel_name h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #4a4e52;
+}
+
+.hotel_place {
+  top: 46px;
+}
+
+.hotel_place h3 {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.hotel_evaluation {
+  top: 46px;
+  right: 1px;
+}
+
+.hotel_star, .hotel_grade, .hotel_review_number {
+  display: inline-block;
+}
+
+.hotel_star {
+  margin-right: 0px;
+  color: #fecb18;
+}
+
+.hotel_grade {
+  margin-right: 7px;
+}
+
+.hotel_grade h3 {
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.hotel_review_number h4 {
+  opacity: 0.7;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.21;
+}
+
+.hotel_amenity {
+  top: 86px;
+  height: 15px;
+}
+
+.hotel_amenity_icons, .hotel_amenity p {
+  display: inline-block;
+}
+
+.hotel_amenity_icons {
+  width:  83px;
+  height: 23px;
+  background-color: gray;
+}
+
+.hotel_price {
+  top: 135.5px;
+  right: 1px;
+}
+
+.hotel_price h2 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-right: 7px;
+}
+
+.hotel_price p {
+  display: inline-block;
+  font-size: 26px;
+  line-height: 1.46;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2bb0bf;
 }
 
 footer {
+  margin-top: 3px;
   overflow: hidden;
   clear: both;
   position: relative;
@@ -330,9 +383,8 @@ textarea {
     text-shadow: none !important;
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
+  a, a:visited {
+    text-decoration: none;
   }
 
   a[href]:after {
