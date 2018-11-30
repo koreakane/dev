@@ -7,144 +7,170 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+a {
+  text-decoration: none;
+}
 
 * {
   margin: 0px;
   border: 0px;
   padding: 0px;
-
 }
 
-header h1 a{
+p, h1, h2, h3, h4, a {
+  text-decoration: none;
+  font-family: 'Noto Sans KR';
+  color: #4a4e52;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+header h1 a {
   display: block;
   text-indent: -9999px;
 }
 
-header h1{
+header h1 {
   overflow: visible;
   position: absolute;
+  top: 19px;
   left: 50%;
-  width: 60px;
-  height: 27px;
-  margin: 0 0 0 -30px;
+  width: 84px;
+  height: 30px;
+  margin: 0 0 0 -42px;
   background-image: url("../img/FaToGO.png");
-  background-size: 60px 31px;
+  background-size: 84px 30px;
   background-repeat: no-repeat;
 }
 
-header{
+header {
   position: relative;
-  height:27px;
+  height: 69px;
   border: solid 0.5px #c9c9c9;
   background-color: #fbffff;
 }
 
-.motel_image{
+.hotel_slideshow {
   position: relative;
+  height: 375px;
+  width: 100%;
+  z-index: 2;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
 
-.vertical{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.vertical {
   z-index: 10;
-  padding: 0 16px;
+  padding: 0 6.1%;
 }
 
+.hotel_evaluation {
+  position: absolute;
+  top: 339px;
+  left: 6.1%;
+  z-index: 1;
+}
 
-.score{
-  position: absolute;
-  top: 290px;
-  left: 5.5%;
-  width: 65%;
+.hotel_star, .hotel_grade, .hotel_review_number {
+  display: inline-block;
 }
-.score a{
-  font-size: 13px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.08;
-  letter-spacing: normal;
-  text-align: left
+
+.hotel_star {
+  margin-right: 0px;
+  color: #ffffff;
 }
-.image_page{
-  position: absolute;
-  top: 292px;
-  left: 46%;
-  width: 65%;
+
+.hotel_grade {
+  margin-right: 7px;
 }
-.image_page p{
-  font-size: 13px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.08;
-  letter-spacing: normal;
-  text-align: left
+
+.hotel_grade h3 {
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
 }
-.image_view{
-  position: absolute;
-  top: 290px;
-  left: 77.5%;
-  width: 74.1px;
-  height: 22.5px;
+
+.hotel_review_number h4 {
   opacity: 0.7;
-  border-radius: 2px;
-  background-color: #c5ffff;
-}
-.image_view a{
-  position: absolute;
-  top: 25%;
-  left: 20%;
-  font-size: 12px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.08;
-  letter-spacing: normal;
-  text-align: left
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.21;
+  color: #ffffff;
 }
 
-.motel_name{
+.hotel_name {
+  margin-top: 20px;
 }
 
+.hotel_name h1 {
+  font-size: 24px;
+  line-height: 1.5;
+}
 
+.hotel_realplace {
+  margin-top: 20px;
+}
 
+.hotel_realplace h3 {
+  font-size: 14px;
+  line-height: 1.43;
+}
 
+.hotel_check_time {
+  margin-top: 5px;
+}
 
- a, p, h3{
-   font-family: NanumSquareRound;
-   color: rgba(0, 0, 0, 0.85);
- }
- a:link {
-     text-decoration: none;
- }
+.hotel_check_time h4 {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+}
 
- a:visited {
-     text-decoration: none;
- }
-
- a:hover {
-     text-decoration: none;
- }
-
- a:active {
-     text-decoration: none;
- }
-
-footer{
+footer {
   overflow: hidden;
-    clear: both;
-    position: relative;
-    padding: 23px 16px 16px 16px;
-    background: rgb(245,245,245);
-    font-size: 10px;
-    line-height: 16px;
-    color: rgba(0,0,0,0.38);
+  clear: both;
+  position: relative;
+  padding: 23px 16px 16px 16px;
+  background: rgb(245, 245, 245);
+  font-size: 10px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.38);
 }
+
+.recommend_box{
+   margin-top: 40px;
+   width: 100%;
+   height: 670px;
+   border-radius: 8px;
+   border: 1px;
+   border-color: #dadada
+}
+
 html {
   color: #bf3a3a;
   font-size: 1em;
