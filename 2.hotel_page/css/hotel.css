@@ -17,7 +17,7 @@ a {
   padding: 0px;
 }
 
-p, h1, h2, h3, h4, a {
+p, h1, h2, h3, h4, h5, a {
   text-decoration: none;
   font-family: 'Noto Sans KR';
   color: #4a4e52;
@@ -151,6 +151,101 @@ header {
   line-height: 1.43;
 }
 
+.vertical2 {
+  z-index: 10;
+  padding: 0 7.9%;
+}
+
+.recommend_box {
+  margin-top: 40px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+}
+
+.recommend_text {
+  margin-top: 30px;
+}
+
+.recommend_text h4 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.recommend_text p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+}
+
+.vertical2 h5 {
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  opacity: 0.8;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.hotel_info {
+  margin-top: 40.5px;
+  border-top: solid 1px #e7e7e7;
+  padding-top: 30px;
+}
+
+.hotel_info h4 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.hotel_amenities {
+  margin-top: 20px;
+  border: solid 1px #dadada;
+  border-radius: 8px;
+  width: 100%;
+  height: 54px;
+}
+
+.hotel_amenities h4 {
+  margin-top: 11px;
+  margin-left: 8.2%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.hotel_amenity_icons{
+   width: 74px;
+   height: 29.5px;
+   background-color: black;
+}
+
+#map{
+   margin-top: 20px;
+   border-radius: 8px;
+   width: 100%;
+   height: 245px;
+}
+
+.hotel_travel_info {
+  margin-top: 20px;
+  border: solid 1px #dadada;
+  border-radius: 8px;
+  width: 100%;
+  height: 48px;
+}
+
+.hotel_travel_info h4 {
+  margin-top: 11px;
+  margin-left: 8.2%;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
 footer {
   overflow: hidden;
   clear: both;
@@ -162,17 +257,7 @@ footer {
   color: rgba(0, 0, 0, 0.38);
 }
 
-.recommend_box{
-   margin-top: 40px;
-   width: 100%;
-   height: 670px;
-   border-radius: 8px;
-   border: 1px;
-   border-color: #dadada
-}
-
 html {
-  color: #bf3a3a;
   font-size: 1em;
   line-height: 1.4;
 }
