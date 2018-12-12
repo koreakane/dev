@@ -7,12 +7,20 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+/* 기본 html 픽셀 : 16px 100% 1em*/
+/* 사용 폰트 */
+body{
+   -webkit-overflow-scrolling:touch;
+   overflow-x: hidden;
+}
+
 * {
   margin: 0px;
   border: 0px;
   padding: 0px;
 }
 
+/* 파투고 로고 헤더 */
 header h1 a {
   display: block;
   text-indent: -9999px;
@@ -23,19 +31,20 @@ header h1 {
   position: absolute;
   top: 29%;
   left: 50%;
-  width: 84px;
-  height: 30px;
-  margin: 0 0 0 -42px;
+  width: 22.4vmin;
+  height: 8vmin;
+  margin: 0 0 0 -11.2vmin;
   background-image: url("../img/FaToGO.png");
-  background-size: 84px 30px;
+  background-size: 22.4vmin 8vmin;
 }
 
 header {
   position: relative;
-  height: 100px;
+  height: 26vmin;
   background-color: #fbffff;
 }
 
+/* 틀을 위한 vertical */
 .vertical {
   top: 0;
   right: 0;
@@ -57,11 +66,11 @@ ul {
 }
 
 li {
-  margin-bottom: 40px;
+  margin-bottom: 10.6vw;
   list-style: none;
   overflow: hidden;
   position: relative;
-  height: 417px;
+  height: 111.2vw;
   object-fit: contain;
   -webkit-backdrop-filter: blur(48px);
   backdrop-filter: blur(48px);
@@ -71,6 +80,11 @@ li {
 
 ul li a p img {
   border-radius: 8px;
+}
+
+img {
+  width: 100%;
+  height: 49vw;
 }
 
 p, h2, h3, h4 {
@@ -99,7 +113,7 @@ p, h2, h3, h4 {
 }
 
 .hotel_name h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: #4a4e52;
 }
@@ -180,7 +194,6 @@ p, h2, h3, h4 {
   color: #2bb0bf;
 }
 
-
 footer {
   margin-top: 3px;
   overflow: hidden;
@@ -195,9 +208,17 @@ footer {
 
 html {
   color: #bf3a3a;
-  font-size: 1em;
+  font-size: 100%;
   line-height: 1.4;
 }
+
+@media only screen and (min-width : 1024px) {
+   .vertical{
+      margin: 0 18.3%;
+   }
+}
+
+
 
 /*
  * Remove text-shadow in selection highlight:

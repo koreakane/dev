@@ -17,7 +17,7 @@ a {
   padding: 0px;
 }
 
-p, h1, h2, h3, h4, h5, a, div {
+p, h1, h2, h3, h4, h5, b {
   text-decoration: none;
   font-family: 'Noto Sans KR';
   color: #4a4e52;
@@ -52,453 +52,88 @@ header {
   background-color: #fbffff;
 }
 
-.purchace{
-   position: fixed;
-   height: 80px;
-   width: 100%;
-   background-color: white;
-   z-index: 10;
-   bottom: 0;
-   border-top: solid 1px #d9d9d9;
-}
-
-.time_length{
-   position: absolute;
-   top: 31px;
-   left: 23px;
-   display: inline-block;
-   font-size: 14px;
-   font-weight: normal;
-   line-height: 1.21;
-}
-
-.total_price{
-   position: absolute;
-   top: 28px;
-   left: 55px;
-   display: inline-block;
-   font-size: 16px;
-   line-height: 1.5;
-}
-
-#btn_purchace{
-   position: absolute;
-   top: 17px;
-   right: 24px;
-   width: 160px;
-   height: 48px;
-   border-radius: 8px;
-   background-color: #2bb0bf;
-   font-size: 18px;
-   font-weight: 500;
-   line-height: 1.5;
-   color: #ffffff;
-}
-
-.hotel_slideshow {
-  position: relative;
-  height: 375px;
-  width: 100%;
-  z-index: 2;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
 .vertical {
   z-index: 10;
-  padding: 0 6.4% 0 6.13%;
+  padding: 0 6.2%;
 }
 
-.hotel_evaluation {
-  position: absolute;
-  top: 339px;
-  left: 6.1%;
-  z-index: 1;
-}
-
-.hotel_star, .hotel_grade, .hotel_review_number {
-  display: inline-block;
-}
-
-.hotel_star {
-  margin-right: 0px;
-  color: #ffffff;
-}
-
-.hotel_grade {
-  margin-right: 7px;
-}
-
-.hotel_grade h3 {
-  font-size: 14px;
-  line-height: 1.21;
-  color: #ffffff;
-}
-
-.hotel_review_number h4 {
-  opacity: 0.7;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.21;
-  color: #ffffff;
-}
-
-.hotel_name {
-  margin-top: 20px;
-}
-
-.hotel_name h1 {
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-.hotel_realplace {
-  margin-top: 20px;
-}
-
-.hotel_realplace h3 {
-  font-size: 14px;
-  line-height: 1.43;
-}
-
-.hotel_check_time {
-  margin-top: 5px;
-}
-
-.hotel_check_time h4 {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.43;
-}
-
-.vertical2 {
-  z-index: 10;
-  padding: 0 7.9%;
-}
-
-.recommend_box {
-  margin-top: 40px;
+.star_evaluation {
   width: 100%;
-  border-radius: 8px;
-  border: 1px solid #dadada;
-}
-
-.recommend_text {
-  margin-top: 30px;
-}
-
-.recommend_text h4 {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.recommend_text p {
-  margin-top: 20px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.43;
-}
-
-.vertical2 h5 {
-  width: 100%;
-  text-align: center;
-  font-size: 11px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  opacity: 0.8;
-  font-weight: normal;
-  line-height: 1.5;
-}
-
-.hotel_info {
-  margin-top: 40.5px;
-  border-top: solid 1px #e7e7e7;
-  padding-top: 30px;
-}
-
-.hotel_info h3 {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.hotel_amenities {
-  margin-top: 20px;
-  padding: 11px 0px 13px 0px;
-  border: solid 1px #dadada;
-  border-radius: 8px;
-  width: 100%;
-}
-
-.hotel_amenities h4 {
-  display: inline;
-  margin-left: 8.2%;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.hotel_amenity_icons {
-  display: inline;
-  float: right;
-  margin-right: 20px;
-  width: 74px;
-  height: 29.5px;
-  background-color: black;
-}
-
-#map {
-  margin-top: 20px;
-  border-radius: 8px;
-  width: 100%;
-  height: 245px;
-}
-
-.hotel_travel_info {
-  margin-top: 20px;
-  padding: 11px 0px 11px 0px;
-  border: solid 1px #dadada;
-  border-radius: 8px;
-  width: 100%
-}
-
-.hotel_travel_info h4 {
-  display: inline-block;
-  margin-left: 8.2%;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.hotel_travel_info span {
-  float: right;
-  margin-right: 27px;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.5;
-  color: #2bb0bf;
-}
-
-.hotel_room_info {
-  margin-top: 40.5px;
-}
-
-.hotel_room_info h3 {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.hotel_room_info p {
-  margin-top: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.21;
-  text-align: center;
-}
-
-.hotrel_room_map {
-  margin-top: 20px;
-  margin-bottom: 110px;
-  width: 100%;
-  height: 328px;
-  border: solid 1px #dadada;
-  border-radius: 8px;
-}
-
-.hotel_room_selectedroom {
-  border-top: solid 1px #e7e7e7;
-  border-bottom: solid 1px #e7e7e7;
-  padding-top: 20.5px;
-  padding-bottom: 42.5px;
-  margin-bottom: 39.5px;
-}
-
-.hotel_room_selectedroom h4 {
-  display: inline;
-  margin-left: 112px;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.21;
-}
-
-.hotel_room_selectedroom span {
-  display: inline;
-  float: right;
-  font-size: 24px;
-  line-height: 1.21;
-}
-
-.room_name>h3 {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 40px;
-}
-
-ul, li {
-  list-style: none;
-}
-
-#swiper-container2 .swiper-wrapper .swiper-slide img {
-  border-radius: 8px;
-}
-
-#swiper-pagination2 {
-  position: relative;
-  color: #4a4e52;
-  font-size: 14px;
-}
-
-.room_size, .room_people {
-  height: 29px;
-}
-
-.room_size {
-  margin-top: 60.5px;
-}
-
-.room_people {
-  margin-top: 13px;
-}
-
-.room_people {
-  top: 45px;
   padding-bottom: 40.5px;
   border-bottom: solid 1px #e7e7e7;
+  margin-bottom: 20px;
 }
 
-.room_size h4, .room_people h4 {
+.star_evaluation h3 {
   display: inline;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.45;
-  margin-left: 8.3%;
 }
 
-.room_size div, .room_people div {
+.star {
   display: inline;
-  float: right;
-  font-size: 20px;
-  line-height: 1.45;
-  margin-right: 8.3%;
-}
-
-.room_info>h3 {
-  margin-top: 20.5px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-table.room_amenity {
-  margin-top: 20px;
-  width: 100%;
-  text-align: center;
-  border-collapse: collapse;
-  border-bottom: solid 1px #e7e7e7;
-}
-
-table.room_amenity td, table.room_amenity th {
-  padding-bottom: 23px;
-}
-
-table.room_amenity tbody tr td:first-child {
-  padding-right: 64px;
-}
-
-table.room_amenity tbody td {
-  margin-bottom: 23px;
-}
-
-table.room_amenity tfoot .links {
-  text-align: right;
-}
-
-table.room_amenity tfoot .links a {
-  display: inline-block;
-  background: #1C6EA4;
-  color: #FFFFFF;
-  padding: 2px 8px;
-  border-radius: 5px;
-}
-
-.room_amenity_icon {
-  float: left;
-  display: inline-block;
-  width: 26px;
-  height: 26px;
   background-color: gray;
-}
-
-table h5 {
   float: right;
-  display: inline-block;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: normal;
+  height: 15px;
+  width: 84px;
 }
 
-.room_reservation {
-  height: 45px;
-  margin-top: 40.5px;
+.score_check {
+  margin-bottom: 40.5px;
+  text-align: center;
 }
 
-.room_reservation h3 {
-  display: inline-block;
-  margin-top: 9px;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.room_reservation div {
+.score_check h2 {
   display: inline;
-  float: right;
+  text-align: center;
   font-size: 30px;
-  line-height: 1.5;
-  color: #2bb0bf;
-}
-
-.room_price {
-  height: 40px;
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
-
-.room_price h4 {
-  display: inline-block;
-  margin-left: 120px;
-  font-size: 24px;
-  font-weight: normal;
+  font-weight: 300;
   line-height: 1.5;
 }
 
-.room_price div {
+.num_finalscore {
+  text-align: center;
   display: inline;
-  float: right;
-  font-size: 26px;
+  font-size: 30px;
+  font-weight: bold;
   line-height: 1.5;
+}
+
+.evalutaion h3 {
+  text-align: center;
+  display: inline;
+  font-size: 20px;
+  line-height: 1.45;
   color: #2bb0bf;
+}
+
+.num_evaluation {
+  display: inline;
+  font-size: 20px;
+  line-height: 1.45;
+  color: #2bb0bf;
+}
+
+#evaluation_text01 {
+  margin-top: 20px;
+}
+
+.evaluataion_text {
+  border-radius: 8px;
+  border: solid 1px #dadada;
+  margin-bottom: 20px;
+}
+
+.evaluataion_text h4 {
+   margin-left: 21.5px;
+   margin-top: 29px;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.evaluataion_text p{
+   margin: 20px 22px 56.5px 26px;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 1.43;
 }
 
 footer {
