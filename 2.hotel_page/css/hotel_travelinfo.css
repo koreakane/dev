@@ -17,7 +17,7 @@ a {
   padding: 0px;
 }
 
-p, h1, h2, h3, h4, h5, a {
+p, h1, h2, h3, h4, h5, a, div{
   text-decoration: none;
   font-family: 'Noto Sans KR';
   color: #4a4e52;
@@ -64,7 +64,6 @@ header {
   height: 184.5px;
   width: 100%;
   z-index: 2;
-  margin-bottom: 119.6px;
 }
 
 .swiper-container {
@@ -106,6 +105,30 @@ header {
 .vertical {
   z-index: 10;
   padding: 0 6.2%;
+}
+.travel_info{
+   margin-top: 40px;
+
+}
+
+.travel_name{
+   font-size: 24px;
+   line-height: 1.5;
+   color: #2bb0bf;
+   margin-bottom: 6px;
+}
+
+.travel_length{
+   font-size: 18px;
+   line-height: 1.5;
+   margin-bottom: 16px;
+}
+
+.travel_script{
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.43;
+   margin-bottom: 40.5px;
 }
 
 footer {
