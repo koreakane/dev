@@ -20,7 +20,7 @@ body {
   padding: 0px;
 }
 
-p, h1, h2, h3, h4, h5, a, div {
+p, h1, h2, h3, h4, h5, a, div, legend, button {
   text-decoration: none;
   font-family: 'Noto Sans KR';
   color: #4a4e52;
@@ -175,8 +175,8 @@ header {
   color: #f2f2f2;
 }
 
-.amenity{
-   margin-bottom: 60px;
+.amenity {
+  margin-bottom: 60px;
 }
 
 .amenity_desc {
@@ -187,31 +187,31 @@ header {
   padding: 13px 0px;
 }
 
-.amenity_imoticon{
-   display: inline;
-   margin-left: 20px;
+.amenity_imoticon {
+  display: inline;
+  margin-left: 20px;
 }
 
-.amenity_desc h4{
-   display: inline;
-   font-size: 18px;
-   line-height: 1.5;
+.amenity_desc h4 {
+  display: inline;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-.amenity_desc span{
-   display: inline;
-   float: right;
-   margin-right: 20px;
-   font-size: 18px;
-   font-weight: 500;
-   color: #64c0cb;
+.amenity_desc span {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #64c0cb;
 }
 
-.amenity_desc span div{
-   display: inline;
-   font-size: 18px;
-   font-weight: 500;
-   color: #64c0cb;
+.amenity_desc span div {
+  display: inline;
+  font-size: 18px;
+  font-weight: 500;
+  color: #64c0cb;
 }
 
 .room_nameinfo .room_prices {
@@ -345,17 +345,405 @@ header {
   content: '24시';
 }
 
-footer {
-  margin-top: 3px;
-  overflow: hidden;
-  clear: both;
-  position: relative;
-  padding: 23px 16px 16px 16px;
-  background: rgb(245, 245, 245);
-  font-size: 10px;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 0.38);
+.full_price {
+  border-top: solid 1px #dadada;
+  padding-top: 40px;
+  margin-bottom: 49px;
 }
+
+.full_price h1 {
+  display: inline;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-left: 19.5%;
+}
+
+.full_price .price_text {
+  margin-left: 20px;
+  display: inline;
+  font-size: 26px;
+  line-height: 1.46;
+  color: #2bb0bf;
+}
+
+.half {
+  margin-bottom: 40px;
+}
+
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: black;
+  overflow: hidden;
+  border: solid 1px #dadada;
+  border-radius: 8px;
+  margin-bottom: 17px;
+  padding: 6px 0px;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: white;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  -webkit-transition: max-height .5s;
+  -o-transition: max-height .5s;
+  transition: max-height .5s;
+}
+
+.tab-content p {
+  margin: 1em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* :checked */
+.tab input:checked~.tab-content {
+  max-height: 100vh;
+}
+
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.tab input[type=checkbox]+label::after {
+  content: "\25BC";
+}
+
+.tab input[type=checkbox]:checked+label::after {
+  transform: rotate(180deg);
+}
+
+.form_inputs > h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.user_info_input fieldset:nth-child(1) {
+  padding: 40px 20.5px 55.5px 19.5px;
+  border: solid 1px #dadada;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.user_info_input fieldset:nth-child(1) input[type="text"] {
+  width: 260px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: solid 1px #dadada;
+  border-radius: 8px;
+  padding: 3px 0px 3px 26px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#agree_checkbox {
+  display: none;
+}
+
+#agree_checkbox+label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin-top: 25px;
+}
+
+#agree_checkbox+label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4a4e52;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+#agree_checkbox:checked+label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.dong_ui {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.dong_ui a {
+  text-decoration: underline;
+  color: #2bb0bf;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 85%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.modal-content h2, .modal-content h3 {
+  color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -200px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -200px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 12px 16px;
+  background-color: #2bb0bf;
+  color: white;
+}
+
+.modal-body {
+  padding: 8px 16px;
+}
+
+.modal-footer {
+  padding: 6px 14px;
+  background-color: #65c0cb;
+  color: white;
+}
+
+legend{
+   font-size: 18px;
+   line-height: 1.5;
+   margin-bottom: 20px;
+}
+
+.user_info_input fieldset:nth-child(2) input{
+  width: 48%;
+  height: 36px;
+  border-radius: 8px;
+  display: inline-block;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+
+.user_info_input fieldset:nth-child(2) input {
+  position: relative;
+  display: inline-block;
+  min-height: 36px;
+  width: 160px;
+  background: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.user_info_input fieldset:nth-child(2) input:after {
+  content: '';
+  font-family: 'Noto Sans KR';
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  color: #65c0cb;
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: block;
+  height: 36px;
+  width: 160px;
+  border-radius: 8px;
+  border: 1px solid #65c0cb;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.user_info_input fieldset:nth-child(2) input:checked:after {
+  height: 40px;
+  width: 150px;
+  color: white;
+  background-color: #65c0cb;
+}
+
+.user_info_input fieldset:nth-child(2) input:focus {
+  outline: none;
+}
+
+.user_info_input fieldset:nth-child(2) input#kakao:after {
+  content: '카카오페이';
+}
+
+.user_info_input fieldset:nth-child(2) input#paycheck:after {
+  content: '무통장입금';
+}
+
+.user_info_input fieldset:nth-child(2) {
+  margin-bottom: 48px;
+}
+
+.submit{
+   height: 80px;
+   width: 100%;
+   border-top: solid 1px #dadada;
+}
+
+.submit input{
+   content: '결제하기';
+   width: 87.5%;
+   margin: 17px 6.125% 15px 6.125%;
+   height: 48px;
+   border-radius: 8px;
+   background-color: #2bb0bf;
+   text-decoration: none;
+   font-family: 'Noto Sans KR';
+   color: white;
+   font-size: 18px;
+   font-weight: normal;
+   font-style: normal;
+   font-stretch: normal;
+   letter-spacing: normal;
+   line-height: 1.5;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -ms-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+
+.submit input:hover{
+   width: 100%;
+   height: 80px;
+   border-radius: 0px;
+   margin: 0px;
+   font-size: 22px;
+}
+
 
 html {
   color: #bf3a3a;

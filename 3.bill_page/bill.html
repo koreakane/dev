@@ -17,7 +17,7 @@
   /notosanskr.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bill.css">
-  <link rel="stylesheet" href="css\swiper.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
 
 
 
@@ -35,7 +35,7 @@
   <!-- 맨 위의 헤더 -->
   <header>
     <h1>
-      <a href="C:\Users\nucle\Desktop\Dev\1.main_page\index.html" title="Fatogo">Fatogo</a><!-- 1.main_page 폴더의 index.html 파일로 이동함-->
+      <a href="../1.main_page/index.html" title="Fatogo">Fatogo</a><!-- 1.main_page 폴더의 index.html 파일로 이동함-->
     </h1>
   </header>
 
@@ -180,37 +180,116 @@
     </div>
 
     <div class="full_price">
+      <h1>총합</h1>
+      <div class="price_text">
+        350,000원
+      </div>
+    </div>
+
+
+    <div class="half">
+      <div class="tab">
+        <input id="tab-one" type="checkbox" name="tabs">
+        <label for="tab-one">예약 및 숙소 안내 공지</label>
+        <div class="tab-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+        </div>
+      </div>
+      <div class="tab">
+        <input id="tab-two" type="checkbox" name="tabs">
+        <label for="tab-two">환불 공지</label>
+        <div class="tab-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="form_inputs">
+    <div class="vertical">
+      <h3>사용자 정보 입력</h3>
+      <form class="user_info_input" action="index.html" method="post">
+
+        <fieldset>
+
+          <input type="text" name="" placeholder="성함">
+          <input type="text" name="" placeholder="전화번호">
+
+          <input id="agree_checkbox" type="checkbox" name="" value="">
+          <label for="agree_checkbox">
+            <div class="dong_ui">
+              <a href="#.dong_ui" id=myBtn>숙소 이용규칙, 취소규정, 개인정보 제 3자 제공약관개인정보수집/이용약관</a> 에 동의합니다.
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2>숙소 공지사항</h2>
+                </div>
+                <div class="modal-footer">
+                  <h3>숙소 이용규칙</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="modal-footer">
+                  <h3>숙소 예약 취소 규정</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="modal-footer">
+                  <h3>개인정보 제 3자 제공약관</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="modal-footer">
+                  <h3>개인정보 수집 약관</h3>
+                </div>
+                <div class="modal-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+          </label>
+
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>결제 방식</legend>
+
+          <input type="radio" name="pay_option" value="kakao" id="kakao">
+          <input type="radio" name="pay_option" value="paycheck" id="paycheck">
+        </fieldset>
+
 
     </div>
-    <div class="reservation_notice">
-
+    <div class="submit">
+      <input type="submit" name="" value="결제하기">
     </div>
-    <div class="payback_notice">
-
-    </div>
-    <form class="" action="index.html" method="post">
-      <fieldset>
-        <input type="text" name="" value="성함">
-        <input type="text" name="" value="전화번호">
-        <input type="checkbox" name="" value=""><a href="#">숙소 이용규칙, 취소규정, 개인정보 제 3자 제공약관개인정보수집/이용약관</a> 에 동의합니다.<br>
-      </fieldset>
-      <fieldset>
-        <legend>결제 방식</legend>
-      </fieldset>
     </form>
+
   </div>
 
 
 
 
-
-
-
-
-  <footer>
-    <p>&copy; HTML CheatSheet</p>
-    <address>Contact <a href="mailto:me@htmlg.com">me</a></address>
-  </footer>
 
 
   <script src="js\swiper.min.js"></script>
